@@ -9,13 +9,15 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">SaaviGen.AI</a>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false">☰</button>
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="SaaviGen.AI Logo" style="height:40px;vertical-align:middle;" />
+        <span class="logo-text">SaaviGen.AI</span>
+      </a>
       <nav id="mainNav" class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home!</a></li>
-          <li><a href="about.html">About!</a></li>
-          <li><a href="services.html">Services!</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
         </ul>
       </nav>
     </div>
@@ -23,20 +25,50 @@
 
   <main class="container">
     <section class="hero">
-      <h1>SaaviGen.AI — Demo</h1>
-      <p>Welcome. This is the saaviGen.AI Home page. Use the menu to visit About and Services.</p>
-      <p><a class="cta" href="services.html">See Services</a></p>
+      <div class="hero-content">
+        <h1 class="hero-title">Empowering Innovation with AI</h1>
+        <p class="hero-subtitle">SaaviGen.AI delivers next-generation AI solutions for businesses and individuals. Unlock your potential with our cutting-edge technology.</p>
+        <a class="cta" href="services.html">Explore Our Services</a>
+      </div>
+      <div class="hero-image">
+        <img src="hero-illustration.png" alt="AI Illustration" style="max-width:100%;height:auto;" />
+      </div>
     </section>
 
-    <section class="content">
-      <h2>Quick Demo</h2>
-      <p>This site is static and served from GitHub Pages (or previewed in Codespaces).</p>
-      <button id="chatBtn">Open chatbot (coming soon)</button>
+    <section class="features">
+      <h2>Why Choose SaaviGen.AI?</h2>
+      <div class="features-list">
+        <div class="feature-item">
+          <img src="icon-innovation.png" alt="Innovation" class="feature-icon" />
+          <h3>Innovative Solutions</h3>
+          <p>We leverage the latest advancements in AI to solve real-world problems.</p>
+        </div>
+        <div class="feature-item">
+          <img src="icon-expertise.png" alt="Expertise" class="feature-icon" />
+          <h3>Expert Team</h3>
+          <p>Our team consists of industry-leading experts in artificial intelligence and data science.</p>
+        </div>
+        <div class="feature-item">
+          <img src="icon-support.png" alt="Support" class="feature-icon" />
+          <h3>Dedicated Support</h3>
+          <p>We provide ongoing support to ensure your success with our solutions.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">© <span id="year"></span> SaaviGen</div>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="logo.png" alt="SaaviGen.AI Logo" style="height:32px;vertical-align:middle;" />
+        <span class="logo-text">SaaviGen.AI</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-copy">© <span id="year"></span> SaaviGen.AI. All rights reserved.</div>
+    </div>
   </footer>
 
   <script src="app.js" defer></script>
